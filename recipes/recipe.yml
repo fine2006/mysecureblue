@@ -27,8 +27,6 @@ modules:
       - fish
       - libsixel
       - libxcrypt-compat
-      - mullvad-vpn
-      - proton-vpn-gnome-desktop
       - tmux
       - gtk3-devel
 
