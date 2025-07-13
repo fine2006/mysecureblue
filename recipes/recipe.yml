@@ -12,27 +12,18 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-42/repo/fedora-42/gloriouseggroll-nobara-42-fedora-42.repo
     install:
       - clang
-      - opentabletdriver
+      - opentabletdriver-0.6.5.1-1.x86_64.rpm
       - android-tools
       - fish
       - libsixel
       - libxcrypt-compat
       - tmux
       - gtk3-devel
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    user: {} # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
