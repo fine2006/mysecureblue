@@ -13,8 +13,6 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - type: rpm-ostree
-    repos:
-      - https://copr.fedorainfracloud.org/coprs/gloriouseggroll/nobara-42/repo/fedora-42/gloriouseggroll-nobara-42-fedora-42.repo
     install:
       - clang
       - opentabletdriver-0.6.5.1-1.x86_64.rpm
