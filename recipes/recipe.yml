@@ -14,7 +14,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: rpm-ostree
     repos:
-      - https://negativo17.org/repos/fedora-multimedia.repo
+      - fedora-multimedia.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       - clang
