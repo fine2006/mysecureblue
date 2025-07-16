@@ -12,13 +12,13 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  #- type: rpm-ostree
-    #install:
-      #- clang
+  - type: rpm-ostree
+    install:
+      - clang
       #- opentabletdriver-0.6.5.1-1.x86_64.rpm
       #- android-tools
-      #- fish
-      #- libsixel
+      - fish
+      - libsixel
       #- libxcrypt-compat
       #- tmux
       #- gtk3-devel
