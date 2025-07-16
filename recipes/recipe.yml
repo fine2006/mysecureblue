@@ -28,12 +28,12 @@ modules:
       - mullvad-vpn
   - type: systemd
     system:
-    enabled: 
-      - mullvad-daemon
-      - mullvad-early-boot-blocking
+      enabled:
+        - mullvad-daemon
+        - mullvad-early-boot-blocking
     user:
-    enabled:
-      - opentabletdriver
+      enabled:
+        - opentabletdriver
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
