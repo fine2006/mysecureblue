@@ -6,7 +6,7 @@ name: mySecureblue
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/secureblue/sericea-main
+base-image: ghcr.io/secureblue/sericea-main-hardened
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -14,7 +14,6 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
   - type: rpm-ostree
     repos:
-      - fedora-multimedia.repo
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       - clang
@@ -23,6 +22,7 @@ modules:
       - fish
       - libsixel
       - libxcrypt-compat
+      - gvfs-mtp
       - tmux
       - gtk3-devel
       - mullvad-vpn

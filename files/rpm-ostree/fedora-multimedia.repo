@@ -1,6 +1,6 @@
 [fedora-multimedia]
 name=negativo17 - Multimedia
-baseurl=https://negativo17.org/repos/multimedia/fedora-42/$basearch/
+baseurl=https://negativo17.org/repos/multimedia/fedora-$releasever/$basearch/
 enabled=1
 skip_if_unavailable=1
 gpgkey=https://negativo17.org/repos/RPM-GPG-KEY-slaanesh
@@ -12,7 +12,7 @@ repo_gpgcheck=0
 
 [fedora-multimedia-source]
 name=negativo17 - Multimedia - Source
-baseurl=https://negativo17.org/repos/multimedia/fedora-42/SRPMS
+baseurl=https://negativo17.org/repos/multimedia/fedora-$releasever/SRPMS
 enabled=0
 skip_if_unavailable=1
 gpgkey=https://negativo17.org/repos/RPM-GPG-KEY-slaanesh
@@ -24,7 +24,7 @@ repo_gpgcheck=0
 
 [fedora-multimedia-debug]
 name=negativo17 - Multimedia - Debug
-baseurl=https://negativo17.org/repos/multimedia/fedora-42/$basearch.debug/
+baseurl=https://negativo17.org/repos/multimedia/fedora-$releasever/$basearch.debug/
 enabled=0
 skip_if_unavailable=1
 gpgkey=https://negativo17.org/repos/RPM-GPG-KEY-slaanesh
