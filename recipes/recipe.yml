@@ -15,7 +15,7 @@ modules:
   - type: rpm-ostree
     install:
       - clang
-      - opentabletdriver-0.6.5.1-1.x86_64.rpm
+      #- opentabletdriver-0.6.5.1-1.x86_64.rpm
       - android-tools
       - fish
       - libsixel
